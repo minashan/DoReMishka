@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fon"
-    tools:context=".MainActivity">
+    android:background="@drawable/fon_gradient">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab1"
@@ -15,7 +14,8 @@
         android:layout_marginTop="420dp"
         android:layout_marginBottom="160dp"
         android:clickable="true"
-        android:onClick="start"
+        android:focusable="true"
+        android:contentDescription="@string/material_motion_easing_standard"
         app:fabCustomSize="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
         app:srcCompat="@drawable/basovyy_kluch" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text1"
         style="@style/Widget.MaterialComponents.TextView"
         android:layout_width="297dp"
         android:layout_height="135dp"

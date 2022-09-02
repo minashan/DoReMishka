@@ -12,9 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val fab1 : View = findViewById(R.id.fab1)
+            val fab1 : View = findViewById(R.id.fab1)
         fab1.setOnClickListener{
-            val intent: Intent = Intent(this, SkripichnyyActivity::class.java)
+            val intent = Intent(this, Skripichny::class.java)
             startActivity(intent)
         }
     }
